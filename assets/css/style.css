@@ -1,0 +1,49 @@
+body {
+  background-color: azure;
+  font-family: "Roboto Slab", serif;
+}
+
+.container {
+  max-width: 760px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.intro {
+  text-align: center;
+}
+
+.img-redonda {
+  max-width: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row .col {
+  flex: 0 1 100%;
+}
+
+@media (max-width: 768) {
+  .container {
+    padding: 10px;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768) {
+  h1 {
+    font-size: 50px;
+  }
+}
